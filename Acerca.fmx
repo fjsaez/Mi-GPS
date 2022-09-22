@@ -9838,7 +9838,7 @@ object FrmAcerca: TFrmAcerca
     Align = Top
     Position.Y = 334.000000000000000000
     Size.Width = 400.000000000000000000
-    Size.Height = 130.000000000000000000
+    Size.Height = 140.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     object Label4: TLabel
@@ -9848,7 +9848,7 @@ object FrmAcerca: TFrmAcerca
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 2.000000000000000000
       Size.Width = 380.000000000000000000
-      Size.Height = 126.000000000000000000
+      Size.Height = 136.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'labelstyle'
       TextSettings.HorzAlign = Center
@@ -9863,7 +9863,7 @@ object FrmAcerca: TFrmAcerca
   end
   object LayAutor: TLayout
     Align = Top
-    Position.Y = 464.000000000000000000
+    Position.Y = 474.000000000000000000
     Size.Width = 400.000000000000000000
     Size.Height = 76.000000000000000000
     Size.PlatformDefault = False
@@ -9891,7 +9891,7 @@ object FrmAcerca: TFrmAcerca
   end
   object Layout1: TLayout
     Align = Top
-    Position.Y = 540.000000000000000000
+    Position.Y = 550.000000000000000000
     Size.Width = 400.000000000000000000
     Size.Height = 20.000000000000000000
     Size.PlatformDefault = False

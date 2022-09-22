@@ -10,7 +10,6 @@ uses
 
 type
   TFrmBrujula = class(TFrame)
-    OrntSensor: TOrientationSensor;
     LayPrinc: TLayout;
     Timer: TTimer;
     Switch: TSwitch;
@@ -23,10 +22,11 @@ type
     CircleInt: TCircle;
     CircleExt: TCircle;
     LineExt: TLine;
-    procedure OrntSensorSensorChoosing(Sender: TObject;
-      const Sensors: TSensorArray; var ChoseSensorIndex: Integer);
+    OrntSensor: TOrientationSensor;
     procedure SwitchSwitch(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
+    procedure OrntSensorSensorChoosing(Sender: TObject;
+      const Sensors: TSensorArray; var ChoseSensorIndex: Integer);
   private
     { Private declarations }
   public
@@ -52,7 +52,7 @@ begin
       Indice:=I;
       Break;
     end;
-  ChoseSensorIndex:=Indice;                  
+  ChoseSensorIndex:=Indice;
 end;
 
 procedure TFrmBrujula.SwitchSwitch(Sender: TObject);
@@ -66,7 +66,7 @@ begin
   end
   else
   begin
-    LActivar.TextSettings.FontColor:=$FFFF0000;  //rojo
+    LActivar.TextSettings.FontColor:=$FFFF0000;   //rojo
     LActivar.Text:='Activar Brújula'
   end;
 end;
@@ -87,9 +87,8 @@ begin
       if (Y<0) then Deg:=180+Deg
       else
         if (Y>=0) and (X>0) then Deg:=360-Deg;
-  //prueba:
-  //Application.ProcessMessages;
-  //Sleep(0);
+  Application.ProcessMessages;
+  Sleep(10);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
 end;

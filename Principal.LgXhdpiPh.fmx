@@ -2944,6 +2944,9 @@ inherited FPrinc_LgXhdpiPh: TFPrinc_LgXhdpiPh
                 end
               end
             end
+            inherited OrntSensor: TOrientationSensor
+              OnSensorChoosing = nil
+            end
           end
         end
         inherited TabUtiles: TTabItem
@@ -2953,24 +2956,18 @@ inherited FPrinc_LgXhdpiPh: TFPrinc_LgXhdpiPh
           inherited FramedVertScrollBox3: TFramedVertScrollBox
             Size.Width = 450.000000000000000000
             Size.Height = 550.000000000000000000
-            Viewport.Width = 450.000000000000000000
+            Viewport.Width = 445.000000000000000000
             Viewport.Height = 550.000000000000000000
             inherited FrmUtiles1: TFrmUtiles
               inherited LayPrinc: TLayout
                 inherited LayEste: TLayout
                   inherited EEste: TEdit
                     TextSettings.Font.StyleExt = {00070000000000000004000000}
-                    inherited ClearEditButton1: TClearEditButton
-                      Size.Height = 50.000000000000000000
-                    end
                   end
                 end
                 inherited LayNorte: TLayout
                   inherited ENorte: TEdit
                     TextSettings.Font.StyleExt = {00070000000000000004000000}
-                    inherited ClearEditButton2: TClearEditButton
-                      Size.Height = 50.000000000000000000
-                    end
                   end
                 end
                 inherited LayEste1: TLayout

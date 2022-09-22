@@ -30,7 +30,7 @@ object FPrinc: TFPrinc
         Size.Height = 640.000000000000000000
         Size.PlatformDefault = False
         TabHeight = 49.000000000000000000
-        TabIndex = 0
+        TabIndex = 1
         TabOrder = 0
         TabPosition = PlatformDefault
         Sizes = (
@@ -46,7 +46,7 @@ object FPrinc: TFPrinc
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 175.000000000000000000
           Size.Height = 49.000000000000000000
           Size.PlatformDefault = False
@@ -345,7 +345,7 @@ object FPrinc: TFPrinc
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 175.000000000000000000
           Size.Height = 49.000000000000000000
           Size.PlatformDefault = False
@@ -373,7 +373,9 @@ object FPrinc: TFPrinc
                 end
                 inherited Switch: TSwitch
                   Position.X = 594.000000000000000000
+                  Position.Y = 12.000000000000000000
                   Size.Width = 76.000000000000000000
+                  Size.Height = 26.000000000000000000
                 end
               end
               inherited Layout5: TLayout
@@ -9047,9 +9049,6 @@ object FPrinc: TFPrinc
                 end
               end
             end
-            inherited Timer: TTimer
-              Interval = 20
-            end
           end
         end
         object TabUtiles: TTabItem
@@ -9083,8 +9082,10 @@ object FPrinc: TFPrinc
                 Size.Height = 555.000000000000000000
                 inherited LaySelect: TLayout
                   Size.Width = 695.000000000000000000
+                  Size.Height = 50.000000000000000000
                   inherited Label2: TLabel
                     Size.Width = 138.000000000000000000
+                    Size.Height = 50.000000000000000000
                   end
                   inherited CBSeleccion: TComboBox
                     Align = Client
@@ -9092,10 +9093,11 @@ object FPrinc: TFPrinc
                     Margins.Top = 6.000000000000000000
                     Margins.Bottom = 6.000000000000000000
                     Size.Width = 531.000000000000000000
-                    Size.Height = 28.000000000000000000
+                    Size.Height = 32.000000000000000000
                   end
                 end
                 inherited LayEste: TLayout
+                  Position.Y = 50.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LEste: TLabel
                     Size.Width = 138.000000000000000000
@@ -9104,6 +9106,7 @@ object FPrinc: TFPrinc
                     TextSettings.Font.Size = 28.000000000000000000
                     TextSettings.Font.StyleExt = {00070000000000000004000000}
                     Size.Width = 531.000000000000000000
+                    Size.Height = 32.000000000000000000
                     StyledSettings = [Family, FontColor]
                     inherited ClearEditButton1: TClearEditButton
                       Size.Width = 32.000000000000000000
@@ -9112,6 +9115,7 @@ object FPrinc: TFPrinc
                   end
                 end
                 inherited LayNorte: TLayout
+                  Position.Y = 100.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LNorte: TLabel
                     Size.Width = 138.000000000000000000
@@ -9120,6 +9124,7 @@ object FPrinc: TFPrinc
                     TextSettings.Font.Size = 28.000000000000000000
                     TextSettings.Font.StyleExt = {00070000000000000004000000}
                     Size.Width = 531.000000000000000000
+                    Size.Height = 32.000000000000000000
                     StyledSettings = [Family, FontColor]
                     inherited ClearEditButton2: TClearEditButton
                       Size.Width = 32.000000000000000000
@@ -9128,12 +9133,15 @@ object FPrinc: TFPrinc
                   end
                 end
                 inherited LayBConv: TLayout
+                  Position.Y = 150.000000000000000000
                   Size.Width = 695.000000000000000000
                 end
                 inherited Layout5: TLayout
+                  Position.Y = 210.000000000000000000
                   Size.Width = 695.000000000000000000
                 end
                 inherited LayEste1: TLayout
+                  Position.Y = 240.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LEsteConv1: TLabel
                     StyledSettings = [Family]
@@ -9144,6 +9152,7 @@ object FPrinc: TFPrinc
                   end
                 end
                 inherited LayEste2: TLayout
+                  Position.Y = 340.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LEsteConv2: TLabel
                     StyledSettings = [Family]
@@ -9154,6 +9163,7 @@ object FPrinc: TFPrinc
                   end
                 end
                 inherited LayNorte2: TLayout
+                  Position.Y = 390.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LNorteConv2: TLabel
                     StyledSettings = [Family]
@@ -9164,6 +9174,7 @@ object FPrinc: TFPrinc
                   end
                 end
                 inherited LayNorte1: TLayout
+                  Position.Y = 290.000000000000000000
                   Size.Width = 695.000000000000000000
                   inherited LNorteConv1: TLabel
                     StyledSettings = [Family]
@@ -9255,7 +9266,7 @@ object FPrinc: TFPrinc
                 end
               end
               inherited LayAutor: TLayout
-                Position.Y = 468.000000000000000000
+                Position.Y = 478.000000000000000000
                 Size.Width = 695.000000000000000000
                 Size.Height = 64.000000000000000000
                 inherited Label5: TLabel
@@ -9271,7 +9282,7 @@ object FPrinc: TFPrinc
                 end
               end
               inherited Layout1: TLayout
-                Position.Y = 532.000000000000000000
+                Position.Y = 542.000000000000000000
                 Size.Width = 695.000000000000000000
               end
             end

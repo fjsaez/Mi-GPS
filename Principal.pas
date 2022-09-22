@@ -80,8 +80,8 @@ implementation
 
 procedure TFPrinc.FormCreate(Sender: TObject);
 begin
-  LDecSeparator:=FormatSettings.DecimalSeparator;
-  FormatSettings.DecimalSeparator:='.';
+  //LDecSeparator:=FormatSettings.DecimalSeparator;
+  //FormatSettings.DecimalSeparator:='.';
   TabControl.ActiveTab:=TabGPS;
 end;
 
@@ -91,8 +91,8 @@ var
   LatLon: TRecLatLon;
   UTM: TRecUTM;
 begin
-  LDecSeparator:=FormatSettings.DecimalSeparator;
-  FormatSettings.DecimalSeparator:='.';
+ // LDecSeparator:=FormatSettings.DecimalSeparator;
+  //FormatSettings.DecimalSeparator:='.';
   //muestra la posición actual:
   LatLon.Lat:=NewLocation.Latitude;
   LatLon.Lon:=NewLocation.Longitude;
@@ -122,7 +122,13 @@ begin
   else               //8.935810      -67.395737
   begin              //676383.87      988138.92
     LActivar.TextSettings.FontColor:=$FFFF0000;  //rojo
-    LActivar.Text:='Activar GPS'
+    LActivar.Text:='Activar GPS';
+    LLat.Text:='--.------';
+    LLon.Text:='--.------';
+    LEste.Text:='------';
+    LNorte.Text:='------';
+    LLatGMS.Text:='--.------';
+    LLonGMS.Text:='--.------';
   end;
 end;
 

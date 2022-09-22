@@ -8919,14 +8919,14 @@ object FrmBrujula: TFrmBrujula
   end
   object Timer: TTimer
     Enabled = False
-    Interval = 100
+    Interval = 50
     OnTimer = TimerTimer
-    Left = 128
-    Top = 408
+    Left = 24
+    Top = 312
   end
   object OrntSensor: TOrientationSensor
     OnSensorChoosing = OrntSensorSensorChoosing
-    Left = 56
-    Top = 408
+    Left = 16
+    Top = 166
   end
 end
