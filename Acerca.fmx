@@ -23,7 +23,7 @@ object FrmAcerca: TFrmAcerca
     Align = Top
     Position.Y = 40.000000000000000000
     Size.Width = 400.000000000000000000
-    Size.Height = 270.000000000000000000
+    Size.Height = 230.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object Image: TImage
@@ -9793,8 +9793,8 @@ object FrmAcerca: TFrmAcerca
             E0C76F14DAF8F878F9FF005F553E75355EF2D80000000049454E44AE426082}
         end>
       Align = Center
-      Size.Width = 250.000000000000000000
-      Size.Height = 250.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 220.000000000000000000
       Size.PlatformDefault = False
       object ShadowEffect: TShadowEffect
         Distance = 4.000000000000000000
@@ -9807,7 +9807,7 @@ object FrmAcerca: TFrmAcerca
   end
   object LayTitulo: TLayout
     Align = Top
-    Position.Y = 310.000000000000000000
+    Position.Y = 270.000000000000000000
     Size.Width = 400.000000000000000000
     Size.Height = 64.000000000000000000
     Size.PlatformDefault = False
@@ -9836,19 +9836,19 @@ object FrmAcerca: TFrmAcerca
   end
   object LayMensaje: TLayout
     Align = Top
-    Position.Y = 374.000000000000000000
+    Position.Y = 334.000000000000000000
     Size.Width = 400.000000000000000000
-    Size.Height = 110.000000000000000000
+    Size.Height = 130.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     object Label4: TLabel
       Align = Client
       Margins.Left = 10.000000000000000000
-      Margins.Top = 6.000000000000000000
+      Margins.Top = 2.000000000000000000
       Margins.Right = 10.000000000000000000
-      Margins.Bottom = 6.000000000000000000
+      Margins.Bottom = 2.000000000000000000
       Size.Width = 380.000000000000000000
-      Size.Height = 98.000000000000000000
+      Size.Height = 126.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'labelstyle'
       TextSettings.HorzAlign = Center
@@ -9863,7 +9863,7 @@ object FrmAcerca: TFrmAcerca
   end
   object LayAutor: TLayout
     Align = Top
-    Position.Y = 484.000000000000000000
+    Position.Y = 464.000000000000000000
     Size.Width = 400.000000000000000000
     Size.Height = 76.000000000000000000
     Size.PlatformDefault = False
@@ -9891,7 +9891,7 @@ object FrmAcerca: TFrmAcerca
   end
   object Layout1: TLayout
     Align = Top
-    Position.Y = 560.000000000000000000
+    Position.Y = 540.000000000000000000
     Size.Width = 400.000000000000000000
     Size.Height = 20.000000000000000000
     Size.PlatformDefault = False

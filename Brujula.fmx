@@ -6083,18 +6083,7 @@ object FrmBrujula: TFrmBrujula
           Size.Width = 1.000000000000000000
           Size.Height = 300.000000000000000000
           Size.PlatformDefault = False
-          Stroke.Kind = Gradient
-          Stroke.Gradient.Points = <
-            item
-              Color = claRed
-              Offset = 0.000000000000000000
-            end
-            item
-              Color = claWhite
-              Offset = 1.000000000000000000
-            end>
-          Stroke.Gradient.StartPosition.X = 0.500000000000000000
-          Stroke.Gradient.StopPosition.X = 0.499999970197677600
+          Stroke.Color = claRed
           Stroke.Thickness = 4.000000000000000000
         end
         object CircleInt: TCircle
@@ -8930,7 +8919,7 @@ object FrmBrujula: TFrmBrujula
   end
   object Timer: TTimer
     Enabled = False
-    Interval = 50
+    Interval = 100
     OnTimer = TimerTimer
     Left = 128
     Top = 408

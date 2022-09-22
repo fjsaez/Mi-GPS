@@ -87,6 +87,9 @@ begin
       if (Y<0) then Deg:=180+Deg
       else
         if (Y>=0) and (X>0) then Deg:=360-Deg;
+  //prueba:
+  //Application.ProcessMessages;
+  //Sleep(0);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
 end;

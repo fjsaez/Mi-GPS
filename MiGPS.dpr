@@ -1,6 +1,11 @@
 program MiGPS;
 
 uses
+  //para mantener la pantalla activa:
+  Androidapi.JNI.App,
+  Androidapi.JNI.GraphicsContentViewText,
+  Androidapi.Helpers,
+  //
   System.StartUpCopy,
   FMX.Forms,
   Principal in 'Principal.pas' {FPrinc},
@@ -13,6 +18,7 @@ uses
 
 begin
   Application.Initialize;
+  SharedActivity.getWindow.addFlags(TJWindowManager_LayoutParams.JavaClass.FLAG_KEEP_SCREEN_ON);
   Application.FormFactor.Orientations := [TFormOrientation.Portrait];
   Application.CreateForm(TFPrinc, FPrinc);
   Application.Run;

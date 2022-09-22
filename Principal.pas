@@ -16,7 +16,6 @@ type
     ToolBarTop: TToolBar;
     Label1: TLabel;
     StyleBook: TStyleBook;
-    LctSensor: TLocationSensor;
     TabControl: TTabControl;
     TabGPS: TTabItem;
     TabUtiles: TTabItem;
@@ -57,11 +56,12 @@ type
     FrmAcerca1: TFrmAcerca;
     TabBrujula: TTabItem;
     FrmBrujula1: TFrmBrujula;
+    LctSensor: TLocationSensor;
     procedure SBSalirClick(Sender: TObject);
     procedure SwitchGPSSwitch(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure LctSensorLocationChanged(Sender: TObject; const OldLocation,
       NewLocation: TLocationCoord2D);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -91,6 +91,9 @@ var
   LatLon: TRecLatLon;
   UTM: TRecUTM;
 begin
+  LDecSeparator:=FormatSettings.DecimalSeparator;
+  FormatSettings.DecimalSeparator:='.';
+  //muestra la posición actual:
   LatLon.Lat:=NewLocation.Latitude;
   LatLon.Lon:=NewLocation.Longitude;
   LatLon_To_UTM(LatLon,UTM);
