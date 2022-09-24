@@ -24,8 +24,7 @@ type
     LineExt: TLine;
     OrntSensor: TOrientationSensor;
     MtnSensor: TMotionSensor;
-    Label1: TLabel;
-    Label2: TLabel;
+    LNivel: TLabel;
     procedure SwitchSwitch(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
     procedure OrntSensorSensorChoosing(Sender: TObject;
@@ -61,7 +60,7 @@ end;
 procedure TFrmBrujula.SwitchSwitch(Sender: TObject);
 begin
   OrntSensor.Active:=Switch.IsChecked;
-  MtnSensor.Sensor.SensorType.Accelerometer2D;
+  MtnSensor.Active:=Switch.IsChecked;
   Timer.Enabled:=Switch.IsChecked;
   if Switch.IsChecked then
   begin
@@ -77,9 +76,10 @@ end;
 
 procedure TFrmBrujula.TimerTimer(Sender: TObject);
 var
-  X,Y,D,Deg: double;
+  X,Y,D,Deg,X2,Y2: double;
 begin
-  //MtnSensor.Sensor
+  X2:=MtnSensor.Sensor.AccelerationX;
+  Y2:=MtnSensor.Sensor.AccelerationY;
   X:=OrntSensor.Sensor.HeadingX;
   Y:=OrntSensor.Sensor.HeadingY;
   if Y=0 then D:=Abs(X/1)  //se evita una división por cero
@@ -96,6 +96,7 @@ begin
   Sleep(10);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
+  LNivel.Text:='X: '+FormatFloat('00.00',X2)+' - Y: '+FormatFloat('00.00',Y2);
 end;
 
 function Orientacion(Grados: single): string;

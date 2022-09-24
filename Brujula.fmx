@@ -8923,14 +8923,23 @@ object FrmBrujula: TFrmBrujula
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
+      object LNivel: TLabel
+        Align = Client
+        Size.Width = 400.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'LNivel'
+        TabOrder = 1
+      end
     end
   end
   object Timer: TTimer
     Enabled = False
     Interval = 50
     OnTimer = TimerTimer
-    Left = 24
-    Top = 312
+    Left = 16
+    Top = 232
   end
   object OrntSensor: TOrientationSensor
     OnSensorChoosing = OrntSensorSensorChoosing
@@ -8938,7 +8947,7 @@ object FrmBrujula: TFrmBrujula
     Top = 166
   end
   object MtnSensor: TMotionSensor
-    Left = 56
-    Top = 440
+    Left = 16
+    Top = 296
   end
 end
