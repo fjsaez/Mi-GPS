@@ -23,6 +23,9 @@ type
     CircleExt: TCircle;
     LineExt: TLine;
     OrntSensor: TOrientationSensor;
+    MtnSensor: TMotionSensor;
+    Label1: TLabel;
+    Label2: TLabel;
     procedure SwitchSwitch(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
     procedure OrntSensorSensorChoosing(Sender: TObject;
@@ -58,6 +61,7 @@ end;
 procedure TFrmBrujula.SwitchSwitch(Sender: TObject);
 begin
   OrntSensor.Active:=Switch.IsChecked;
+  MtnSensor.Sensor.SensorType.Accelerometer2D;
   Timer.Enabled:=Switch.IsChecked;
   if Switch.IsChecked then
   begin
@@ -75,6 +79,7 @@ procedure TFrmBrujula.TimerTimer(Sender: TObject);
 var
   X,Y,D,Deg: double;
 begin
+  //MtnSensor.Sensor
   X:=OrntSensor.Sensor.HeadingX;
   Y:=OrntSensor.Sensor.HeadingY;
   if Y=0 then D:=Abs(X/1)  //se evita una división por cero

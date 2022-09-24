@@ -8916,6 +8916,14 @@ object FrmBrujula: TFrmBrujula
         end
       end
     end
+    object Layout1: TLayout
+      Align = Top
+      Position.Y = 423.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
   end
   object Timer: TTimer
     Enabled = False
@@ -8928,5 +8936,9 @@ object FrmBrujula: TFrmBrujula
     OnSensorChoosing = OrntSensorSensorChoosing
     Left = 16
     Top = 166
+  end
+  object MtnSensor: TMotionSensor
+    Left = 56
+    Top = 440
   end
 end

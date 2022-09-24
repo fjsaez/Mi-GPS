@@ -77,6 +77,7 @@ implementation
 {$R *.fmx}
 {$R *.NmXhdpiPh.fmx ANDROID}
 {$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.E8D852BA4D9C450B8D495F79D8F4368E.fmx ANDROID}
 
 procedure TFPrinc.FormCreate(Sender: TObject);
 begin
