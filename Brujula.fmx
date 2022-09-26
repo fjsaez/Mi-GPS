@@ -8929,7 +8929,6 @@ object FrmBrujula: TFrmBrujula
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TextSettings.HorzAlign = Center
-        Text = 'LNivel'
         TabOrder = 1
       end
     end
