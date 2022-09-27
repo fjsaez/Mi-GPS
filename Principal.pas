@@ -6,8 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
   FMX.StdCtrls, FMX.Controls.Presentation, System.Sensors, FMX.Platform.Android,
-  System.Sensors.Components, FMX.TabControl, UTM_WGS84, Utiles, Acerca,
-  FMX.Effects, Brujula;
+  System.Sensors.Components, FMX.TabControl, UTM_WGS84, Utiles, Acerca, Brujula,
+  FMX.Effects;
 
 type
   TFPrinc = class(TForm)
@@ -80,8 +80,6 @@ implementation
 
 procedure TFPrinc.FormCreate(Sender: TObject);
 begin
-  //LDecSeparator:=FormatSettings.DecimalSeparator;
-  //FormatSettings.DecimalSeparator:='.';
   TabControl.ActiveTab:=TabGPS;
 end;
 
@@ -91,8 +89,6 @@ var
   LatLon: TRecLatLon;
   UTM: TRecUTM;
 begin
- // LDecSeparator:=FormatSettings.DecimalSeparator;
-  //FormatSettings.DecimalSeparator:='.';
   //muestra la posición actual:
   LatLon.Lat:=NewLocation.Latitude;
   LatLon.Lon:=NewLocation.Longitude;

@@ -6072,7 +6072,7 @@ object FrmBrujula: TFrmBrujula
           A15028140A85E28021FAFF016AEBCD7F7A15B70000000049454E44AE426082}
         Fill.Bitmap.WrapMode = TileStretch
         Fill.Kind = Bitmap
-        Size.Width = 300.000000000000000000
+        Size.Width = 400.000000000000000000
         Size.Height = 300.000000000000000000
         Size.PlatformDefault = False
         Stroke.Color = claWhite
@@ -6080,7 +6080,7 @@ object FrmBrujula: TFrmBrujula
         object LineExt: TLine
           Align = Center
           LineType = Diagonal
-          Size.Width = 1.000000000000000000
+          Size.Width = 4.000000000000000000
           Size.Height = 300.000000000000000000
           Size.PlatformDefault = False
           Stroke.Color = claRed
