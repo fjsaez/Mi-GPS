@@ -25,10 +25,14 @@ type
     OrntSensor: TOrientationSensor;
     MtnSensor: TMotionSensor;
     LNivel: TLabel;
+    RectMarca: TRectangle;
+    LayMarca: TLayout;
     procedure SwitchSwitch(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
     procedure OrntSensorSensorChoosing(Sender: TObject;
       const Sensors: TSensorArray; var ChoseSensorIndex: Integer);
+    procedure CircleExtPaint(Sender: TObject; Canvas: TCanvas;
+      const ARect: TRectF);
   private
     { Private declarations }
   public
@@ -40,6 +44,12 @@ type
 implementation
 
 {$R *.fmx}
+
+procedure TFrmBrujula.CircleExtPaint(Sender: TObject; Canvas: TCanvas;
+  const ARect: TRectF);
+begin
+  LayMarca.Size.Width:=CircleExt.Size.Width;
+end;
 
 procedure TFrmBrujula.OrntSensorSensorChoosing(Sender: TObject;
   const Sensors: TSensorArray; var ChoseSensorIndex: Integer);
@@ -96,7 +106,7 @@ begin
   Sleep(10);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
-  LNivel.Text:='X: '+FormatFloat('00.00',X2)+' - Y: '+FormatFloat('00.00',Y2);
+  LNivel.Text:='X: '+FormatFloat('00.00',X2)+' --- Y: '+FormatFloat('00.00',Y2);
 end;
 
 function Orientacion(Grados: single): string;

@@ -9079,7 +9079,7 @@ object FPrinc: TFPrinc
             Size.Height = 591.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            Viewport.Width = 695.000000000000000000
+            Viewport.Width = 700.000000000000000000
             Viewport.Height = 591.000000000000000000
             inline FrmUtiles1: TFrmUtiles
               Align = Top
@@ -9224,7 +9224,7 @@ object FPrinc: TFPrinc
             Size.Height = 591.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            Viewport.Width = 695.000000000000000000
+            Viewport.Width = 700.000000000000000000
             Viewport.Height = 591.000000000000000000
             inline FrmAcerca1: TFrmAcerca
               Align = Top
