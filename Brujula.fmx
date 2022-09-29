@@ -6078,16 +6078,6 @@ object FrmBrujula: TFrmBrujula
         Stroke.Color = claWhite
         Stroke.Thickness = 3.000000000000000000
         OnPaint = CircleExtPaint
-        object LineExt: TLine
-          Align = Center
-          LineType = Diagonal
-          Size.Width = 4.000000000000000000
-          Size.Height = 300.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Color = claRed
-          Stroke.Thickness = 4.000000000000000000
-          Visible = False
-        end
         object LayMarca: TLayout
           Align = Scale
           Size.Width = 400.000000000000000000

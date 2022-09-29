@@ -21,7 +21,6 @@ type
     LayImagen: TLayout;
     CircleInt: TCircle;
     CircleExt: TCircle;
-    LineExt: TLine;
     OrntSensor: TOrientationSensor;
     MtnSensor: TMotionSensor;
     LNivel: TLabel;
