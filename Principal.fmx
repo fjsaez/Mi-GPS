@@ -6230,9 +6230,6 @@ object FPrinc: TFPrinc
                     0C043DD6B148F58600C3300CC39C6E38A52F24EBD898300CC3300CC3300CC330
                     0C7338DCDACD300CC3300CC3300CC330470DF0FFD4224EC9697198F800000000
                     49454E44AE426082}
-                  inherited LineExt: TLine
-                    Stroke.Kind = Gradient
-                  end
                   inherited CircleInt: TCircle
                     Fill.Bitmap.Bitmap.PNG = {
                       89504E470D0A1A0A0000000D494844520000010300000103080600000031D161
@@ -9079,7 +9076,7 @@ object FPrinc: TFPrinc
             Size.Height = 591.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            Viewport.Width = 700.000000000000000000
+            Viewport.Width = 695.000000000000000000
             Viewport.Height = 591.000000000000000000
             inline FrmUtiles1: TFrmUtiles
               Align = Top
@@ -9224,7 +9221,7 @@ object FPrinc: TFPrinc
             Size.Height = 591.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            Viewport.Width = 700.000000000000000000
+            Viewport.Width = 695.000000000000000000
             Viewport.Height = 591.000000000000000000
             inline FrmAcerca1: TFrmAcerca
               Align = Top

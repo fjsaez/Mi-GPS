@@ -132,7 +132,8 @@ inherited FPrinc_LgXhdpiPh: TFPrinc_LgXhdpiPh
               inherited Layout1: TLayout
                 Size.Width = 450.000000000000000000
                 inherited LNivel: TLabel
-                  Size.Width = 450.000000000000000000
+                  Margins.Left = 30.000000000000000000
+                  Size.Width = 420.000000000000000000
                 end
               end
             end

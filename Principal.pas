@@ -75,8 +75,6 @@ var
 implementation
 
 {$R *.fmx}
-{$R *.NmXhdpiPh.fmx ANDROID}
-{$R *.LgXhdpiPh.fmx ANDROID}
 
 procedure TFPrinc.FormCreate(Sender: TObject);
 begin

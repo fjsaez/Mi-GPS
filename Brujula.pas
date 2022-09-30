@@ -23,9 +23,9 @@ type
     CircleExt: TCircle;
     OrntSensor: TOrientationSensor;
     MtnSensor: TMotionSensor;
-    LNivel: TLabel;
     RectMarca: TRectangle;
     LayMarca: TLayout;
+    LNivel: TLabel;
     procedure SwitchSwitch(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
     procedure OrntSensorSensorChoosing(Sender: TObject;
@@ -84,6 +84,8 @@ begin
 end;
 
 procedure TFrmBrujula.TimerTimer(Sender: TObject);
+const
+  Rng=0.2;
 var
   X,Y,D,Deg,X2,Y2: double;
 begin
@@ -105,7 +107,12 @@ begin
   Sleep(10);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
-  LNivel.Text:='X: '+FormatFloat('00.00',X2)+' --- Y: '+FormatFloat('00.00',Y2);
+  if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
+    //LNivel.TextSettings.FontColor:=$FF7FFF00   //chartreuse
+    LNivel.Text:='NIVELADO'
+  else //LNivel.TextSettings.FontColor:=$FFFFFF00;   //blanco;
+    LNivel.Text:='NO nivelado';
+  //LNivel.Text:='X: '+FormatFloat('00.00',X2)+' --- Y: '+FormatFloat('00.00',Y2);
 end;
 
 function Orientacion(Grados: single): string;
