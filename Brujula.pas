@@ -108,10 +108,15 @@ begin
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
   if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
-    //LNivel.TextSettings.FontColor:=$FF7FFF00   //chartreuse
+  begin
+    LNivel.TextSettings.FontColor:=$FF7FFF00;   //chartreuse
     LNivel.Text:='NIVELADO'
-  else //LNivel.TextSettings.FontColor:=$FFFFFF00;   //blanco;
+  end
+  else
+  begin
+    LNivel.TextSettings.FontColor:=$FFFFFF00;   //blanco;
     LNivel.Text:='NO nivelado';
+  end;
   //LNivel.Text:='X: '+FormatFloat('00.00',X2)+' --- Y: '+FormatFloat('00.00',Y2);
 end;
 

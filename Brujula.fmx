@@ -8931,6 +8931,7 @@ object FrmBrujula: TFrmBrujula
       TabOrder = 4
       object LNivel: TLabel
         Align = Client
+        StyledSettings = [Family, Size, FontColor]
         Size.Width = 400.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
