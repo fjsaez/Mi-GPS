@@ -103,8 +103,8 @@ begin
       if (Y<0) then Deg:=180+Deg
       else
         if (Y>=0) and (X>0) then Deg:=360-Deg;
-  Application.ProcessMessages;
-  Sleep(10);
+  //Application.ProcessMessages;
+  //Sleep(10);
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
   if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
@@ -117,7 +117,6 @@ begin
     LNivel.TextSettings.FontColor:=$FFFFFF00;   //blanco;
     LNivel.Text:='NO nivelado';
   end;
-  //LNivel.Text:='X: '+FormatFloat('00.00',X2)+' --- Y: '+FormatFloat('00.00',Y2);
 end;
 
 function Orientacion(Grados: single): string;
