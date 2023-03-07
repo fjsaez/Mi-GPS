@@ -46990,6 +46990,8 @@ object FPrinc: TFPrinc
     Top = 8
   end
   object LctSensor: TLocationSensor
+    ActivityType = Other
+    UsageAuthorization = WhenInUse
     OnLocationChanged = LctSensorLocationChanged
     Left = 56
     Top = 8

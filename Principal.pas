@@ -68,6 +68,10 @@ type
     { Public declarations }
   end;
 
+const
+  Chartreuse=$FF7FFF00;
+  Rojo=$FFFF0000;
+
 var
   FPrinc: TFPrinc;
   LDecSeparator: char;
@@ -110,12 +114,12 @@ begin
   LctSensor.Active:=SwitchGPS.IsChecked;
   if SwitchGPS.IsChecked then
   begin
-    LActivar.TextSettings.FontColor:=$FF7FFF00;   //chartreuse
+    LActivar.TextSettings.FontColor:=Chartreuse;   //chartreuse
     LActivar.Text:='Desactivar GPS'
   end
   else               //8.935810      -67.395737
   begin              //676383.87      988138.92
-    LActivar.TextSettings.FontColor:=$FFFF0000;  //rojo
+    LActivar.TextSettings.FontColor:=Rojo;
     LActivar.Text:='Activar GPS';
     LLat.Text:='--.------';
     LLon.Text:='--.------';
