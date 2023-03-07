@@ -38,6 +38,11 @@ type
     { Public declarations }
   end;
 
+const
+  Chartreuse=$FF7FFF00;
+  Rojo=$FFFF0000;
+  Blanco=$FFFFFF00;
+
   function Orientacion(Grados: single): string;
 
 implementation
@@ -73,12 +78,12 @@ begin
   Timer.Enabled:=Switch.IsChecked;
   if Switch.IsChecked then
   begin
-    LActivar.TextSettings.FontColor:=$FF7FFF00;   //chartreuse
+    LActivar.TextSettings.FontColor:=Chartreuse;   //chartreuse
     LActivar.Text:='Desactivar Brújula'
   end
   else
   begin
-    LActivar.TextSettings.FontColor:=$FFFF0000;   //rojo
+    LActivar.TextSettings.FontColor:=Rojo;   //rojo
     LActivar.Text:='Activar Brújula'
   end;
 end;
@@ -107,12 +112,12 @@ begin
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
   if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
   begin
-    LNivel.TextSettings.FontColor:=$FF7FFF00;   //chartreuse
+    LNivel.TextSettings.FontColor:=Chartreuse;   //chartreuse
     LNivel.Text:='NIVELADO'
   end
   else
   begin
-    LNivel.TextSettings.FontColor:=$FFFFFF00;   //blanco;
+    LNivel.TextSettings.FontColor:=Blanco;   //blanco;
     LNivel.Text:='NO nivelado';
   end;
 end;
