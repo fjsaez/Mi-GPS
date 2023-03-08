@@ -3,10 +3,10 @@ unit Brujula;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
-  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  System.Sensors, System.Sensors.Components, FMX.ListBox, FMX.Layouts,
-  FMX.Controls.Presentation, System.Math, FMX.Objects;
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Dialogs, FMX.StdCtrls, FMX.Objects,
+  System.Sensors, System.Sensors.Components, FMX.ListBox, FMX.Layouts, FMX.Forms,
+  FMX.Controls.Presentation, System.Math;
 
 type
   TFrmBrujula = class(TFrame)
@@ -78,12 +78,12 @@ begin
   Timer.Enabled:=Switch.IsChecked;
   if Switch.IsChecked then
   begin
-    LActivar.TextSettings.FontColor:=Chartreuse;   //chartreuse
+    LActivar.TextSettings.FontColor:=Chartreuse;
     LActivar.Text:='Desactivar Brújula'
   end
   else
   begin
-    LActivar.TextSettings.FontColor:=Rojo;   //rojo
+    LActivar.TextSettings.FontColor:=Rojo;
     LActivar.Text:='Activar Brújula'
   end;
 end;
@@ -112,12 +112,12 @@ begin
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
   if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
   begin
-    LNivel.TextSettings.FontColor:=Chartreuse;   //chartreuse
+    LNivel.TextSettings.FontColor:=Chartreuse;
     LNivel.Text:='NIVELADO'
   end
   else
   begin
-    LNivel.TextSettings.FontColor:=Blanco;   //blanco;
+    LNivel.TextSettings.FontColor:=Blanco;
     LNivel.Text:='NO nivelado';
   end;
 end;
