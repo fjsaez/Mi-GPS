@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
   FMX.StdCtrls, FMX.Controls.Presentation, System.Sensors, FMX.Platform.Android,
   System.Sensors.Components, FMX.TabControl, UTM_WGS84, Utiles, Acerca, Brujula,
-  FMX.Effects;
+  FMX.Effects, Androidapi.JNI.Location;
 
 type
   TFPrinc = class(TForm)
@@ -62,6 +62,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure LctSensorLocationChanged(Sender: TObject; const OldLocation,
       NewLocation: TLocationCoord2D);
+    procedure FrmBrujula1SwitchSwitch(Sender: TObject);
   private
     { Private declarations }
   public
@@ -78,11 +79,22 @@ var
 
 implementation
 
+uses
+  System.Permissions, FMX.DialogService;
+
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.NmXhdpiPh.fmx ANDROID}
 
 procedure TFPrinc.FormCreate(Sender: TObject);
 begin
   TabControl.ActiveTab:=TabGPS;
+end;
+
+procedure TFPrinc.FrmBrujula1SwitchSwitch(Sender: TObject);
+begin
+  FrmBrujula1.SwitchSwitch(Sender);
+
 end;
 
 procedure TFPrinc.LctSensorLocationChanged(Sender: TObject; const OldLocation,
@@ -110,7 +122,22 @@ begin
 end;
 
 procedure TFPrinc.SwitchGPSSwitch(Sender: TObject);
+const
+  PermissionAccessFineLocation='android.permission.ACCESS_FINE_LOCATION';
 begin
+  //se activa el sensor. Ojo: cambio hecho para Delphi 11.2
+  PermissionsService.RequestPermissions([PermissionAccessFineLocation],
+    procedure(const APermissions: TClassicStringDynArray;
+              const AGrantResults: TClassicPermissionStatusDynArray)
+    begin
+      if (Length(AGrantResults)=1) and (AGrantResults[0]=TPermissionStatus.Granted) then
+        LctSensor.Active := SwitchGPS.IsChecked
+      else
+      begin
+        SwitchGPS.IsChecked:=false;
+        TDialogService.ShowMessage('Permiso de Localización no está permitido');
+      end;
+    end);
   LctSensor.Active:=SwitchGPS.IsChecked;
   if SwitchGPS.IsChecked then
   begin

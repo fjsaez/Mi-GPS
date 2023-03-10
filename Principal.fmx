@@ -376,6 +376,7 @@ object FPrinc: TFPrinc
                   Position.Y = 12.000000000000000000
                   Size.Width = 76.000000000000000000
                   Size.Height = 26.000000000000000000
+                  OnSwitch = FrmBrujula1SwitchSwitch
                 end
               end
               inherited Layout5: TLayout

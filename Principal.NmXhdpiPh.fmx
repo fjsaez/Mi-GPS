@@ -23,85 +23,54 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           400s
           470s)
         inherited TabGPS: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 32.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox1: TFramedVertScrollBox
             Size.Width = 400.000000000000000000
             Size.Height = 470.000000000000000000
-            Viewport.Width = 400.000000000000000000
-            Viewport.Height = 470.000000000000000000
+            Viewport.Width = 700.000000000000000000
+            Viewport.Height = 591.000000000000000000
             inherited Layout2: TLayout
-              Size.Width = 395.000000000000000000
               inherited SwitchGPS: TSwitch
-                Position.X = 321.000000000000000000
+                Position.X = 626.000000000000000000
                 Size.Width = 44.000000000000000000
               end
             end
-            inherited Layout3: TLayout
-              Size.Width = 395.000000000000000000
-              inherited Label3: TLabel
-                Size.Width = 395.000000000000000000
-              end
-            end
             inherited Layout4: TLayout
-              Size.Width = 395.000000000000000000
               inherited LEste: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
             inherited Layout5: TLayout
-              Size.Width = 395.000000000000000000
               inherited LNorte: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
-            inherited Layout6: TLayout
-              Size.Width = 395.000000000000000000
-              inherited Label8: TLabel
-                Size.Width = 395.000000000000000000
-              end
-            end
             inherited Layout7: TLayout
-              Size.Width = 395.000000000000000000
               inherited LLon: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
             inherited Layout8: TLayout
-              Size.Width = 395.000000000000000000
               inherited LLat: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
-            inherited Layout9: TLayout
-              Size.Width = 395.000000000000000000
-              inherited Label2: TLabel
-                Size.Width = 395.000000000000000000
-              end
-            end
             inherited Layout10: TLayout
-              Size.Width = 395.000000000000000000
               inherited LLatGMS: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
             inherited Layout11: TLayout
-              Size.Width = 395.000000000000000000
               inherited LLonGMS: TLabel
-                Size.Width = 235.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
               end
             end
           end
         end
         inherited TabBrujula: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 61.000000000000000000
           ExplicitSize.cx = 96.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FrmBrujula1: TFrmBrujula
@@ -114,6 +83,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
                 Size.Width = 400.000000000000000000
                 inherited Switch: TSwitch
                   Position.X = 294.000000000000000000
+                  Size.Height = 50.000000000000000000
                 end
               end
               inherited Layout5: TLayout
@@ -132,25 +102,21 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
               inherited Layout1: TLayout
                 Size.Width = 400.000000000000000000
                 inherited LNivel: TLabel
-                  Margins.Left = 30.000000000000000000
-                  Size.Width = 370.000000000000000000
+                  Size.Width = 400.000000000000000000
                 end
               end
-            end
-            inherited OrntSensor: TOrientationSensor
-              OnSensorChoosing = nil
             end
           end
         end
         inherited TabUtiles: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 48.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox3: TFramedVertScrollBox
             Size.Width = 400.000000000000000000
             Size.Height = 470.000000000000000000
-            Viewport.Width = 400.000000000000000000
-            Viewport.Height = 470.000000000000000000
+            Viewport.Width = 695.000000000000000000
+            Viewport.Height = 591.000000000000000000
             inherited FrmUtiles1: TFrmUtiles
               inherited LayPrinc: TLayout
                 inherited LayEste: TLayout
@@ -194,53 +160,24 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           end
         end
         inherited TabAcerca: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 64.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox2: TFramedVertScrollBox
             Size.Width = 400.000000000000000000
             Size.Height = 470.000000000000000000
-            Viewport.Width = 400.000000000000000000
-            Viewport.Height = 470.000000000000000000
+            Viewport.Width = 695.000000000000000000
+            Viewport.Height = 591.000000000000000000
             inherited FrmAcerca1: TFrmAcerca
-              Size.Width = 395.000000000000000000
-              inherited ToolBar1: TToolBar
-                Size.Width = 395.000000000000000000
-                inherited Label1: TLabel
-                  Size.Width = 395.000000000000000000
-                end
-              end
-              inherited LayImagen: TLayout
-                Size.Width = 395.000000000000000000
-              end
               inherited LayTitulo: TLayout
-                Size.Width = 395.000000000000000000
                 inherited Label2: TLabel
-                  Size.Width = 395.000000000000000000
                   TextSettings.Font.StyleExt = {00070000000000000004000000}
-                end
-                inherited Label3: TLabel
-                  Size.Width = 395.000000000000000000
-                end
-              end
-              inherited LayMensaje: TLayout
-                Size.Width = 395.000000000000000000
-                inherited Label4: TLabel
-                  Size.Width = 383.000000000000000000
                 end
               end
               inherited LayAutor: TLayout
-                Size.Width = 395.000000000000000000
                 inherited Label5: TLabel
-                  Size.Width = 395.000000000000000000
                   TextSettings.Font.StyleExt = {00070000000000000004000000}
                 end
-                inherited Label6: TLabel
-                  Size.Width = 395.000000000000000000
-                end
-              end
-              inherited Layout1: TLayout
-                Size.Width = 395.000000000000000000
               end
             end
           end
