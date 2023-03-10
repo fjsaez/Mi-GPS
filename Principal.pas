@@ -114,7 +114,7 @@ begin
   LctSensor.Active:=SwitchGPS.IsChecked;
   if SwitchGPS.IsChecked then
   begin
-    LActivar.TextSettings.FontColor:=Chartreuse;   //chartreuse
+    LActivar.TextSettings.FontColor:=Chartreuse;
     LActivar.Text:='Desactivar GPS'
   end
   else               //8.935810      -67.395737

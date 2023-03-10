@@ -9048,7 +9048,9 @@ object FPrinc: TFPrinc
               inherited Layout1: TLayout
                 Size.Width = 700.000000000000000000
                 inherited LNivel: TLabel
+                  StyledSettings = [Family, Size, Style]
                   Size.Width = 700.000000000000000000
+                  TextSettings.FontColor = claWhite
                 end
               end
             end
