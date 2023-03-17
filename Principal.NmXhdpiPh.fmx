@@ -23,7 +23,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           400s
           470s)
         inherited TabGPS: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 32.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox1: TFramedVertScrollBox
@@ -31,12 +31,6 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
             Size.Height = 470.000000000000000000
             Viewport.Width = 700.000000000000000000
             Viewport.Height = 591.000000000000000000
-            inherited Layout2: TLayout
-              inherited SwitchGPS: TSwitch
-                Position.X = 626.000000000000000000
-                Size.Width = 44.000000000000000000
-              end
-            end
             inherited Layout4: TLayout
               inherited LEste: TLabel
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -70,7 +64,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           end
         end
         inherited TabBrujula: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 61.000000000000000000
           ExplicitSize.cx = 96.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FrmBrujula1: TFrmBrujula
@@ -83,6 +77,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
                 Size.Width = 400.000000000000000000
                 inherited Switch: TSwitch
                   Position.X = 294.000000000000000000
+                  Size.Height = 50.000000000000000000
                 end
               end
               inherited Layout5: TLayout
@@ -108,7 +103,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           end
         end
         inherited TabUtiles: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 48.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox3: TFramedVertScrollBox
@@ -159,7 +154,7 @@ inherited FPrinc_NmXhdpiPh: TFPrinc_NmXhdpiPh
           end
         end
         inherited TabAcerca: TTabItem
-          Size.Width = 100.000000000000000000
+          Size.Width = 64.000000000000000000
           ExplicitSize.cx = 128.000000000000000000
           ExplicitSize.cy = 49.000000000000000000
           inherited FramedVertScrollBox2: TFramedVertScrollBox

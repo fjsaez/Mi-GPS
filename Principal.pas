@@ -125,7 +125,6 @@ procedure TFPrinc.SwitchGPSSwitch(Sender: TObject);
 const
   PermissionAccessFineLocation='android.permission.ACCESS_FINE_LOCATION';
 begin
-  //se activa el sensor. Ojo: cambio hecho para Delphi 11.2
   PermissionsService.RequestPermissions([PermissionAccessFineLocation],
     procedure(const APermissions: TClassicStringDynArray;
               const AGrantResults: TClassicPermissionStatusDynArray)
