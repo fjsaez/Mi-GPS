@@ -18,7 +18,8 @@ uses
 
 begin
   Application.Initialize;
-  SharedActivity.getWindow.addFlags(TJWindowManager_LayoutParams.JavaClass.FLAG_KEEP_SCREEN_ON);
+  TAndroidHelper.Activity.getWindow.addFlags(
+    TJWindowManager_LayoutParams.JavaClass.FLAG_KEEP_SCREEN_ON);
   Application.FormFactor.Orientations := [TFormOrientation.Portrait];
   Application.CreateForm(TFPrinc, FPrinc);
   Application.Run;
