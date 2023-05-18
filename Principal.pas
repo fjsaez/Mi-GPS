@@ -94,7 +94,6 @@ end;
 procedure TFPrinc.FrmBrujula1SwitchSwitch(Sender: TObject);
 begin
   FrmBrujula1.SwitchSwitch(Sender);
-
 end;
 
 procedure TFPrinc.LctSensorLocationChanged(Sender: TObject; const OldLocation,

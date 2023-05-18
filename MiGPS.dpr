@@ -2,7 +2,7 @@ program MiGPS;
 
 uses
   //para mantener la pantalla activa:
-  Androidapi.JNI.App,
+  Androidapi.JNI.App, System.SysUtils,
   Androidapi.JNI.GraphicsContentViewText,
   Androidapi.Helpers,
   //
