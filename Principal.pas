@@ -133,7 +133,7 @@ begin
       else
       begin
         SwitchGPS.IsChecked:=false;
-        TDialogService.ShowMessage('Permiso de Localización no está permitido');
+        TDialogService.ShowMessage('Permiso de Localización no fue concedido');
       end;
     end);
   LctSensor.Active:=SwitchGPS.IsChecked;

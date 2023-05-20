@@ -86,9 +86,9 @@ object FPrinc: TFPrinc
                 Align = Right
                 IsChecked = False
                 Margins.Right = 30.000000000000000000
-                Position.X = 594.000000000000000000
+                Position.X = 626.000000000000000000
                 Position.Y = 12.000000000000000000
-                Size.Width = 76.000000000000000000
+                Size.Width = 44.000000000000000000
                 Size.Height = 26.000000000000000000
                 Size.PlatformDefault = False
                 StyleLookup = 'switchstyle'
