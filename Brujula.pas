@@ -110,6 +110,7 @@ begin
         if (Y>=0) and (X>0) then Deg:=360-Deg;
   CircleInt.RotationAngle:=360-Deg;
   LPtoCard.Text:=Round(Deg).ToString+'º - '+Orientacion(Deg);
+  //se indica si la brùjula está nivelada o no:
   if ((X2>=-Rng) and (X2<=Rng)) and ((Y2>=-Rng) and (Y2<=Rng)) then
   begin
     LNivel.TextSettings.FontColor:=Chartreuse;
